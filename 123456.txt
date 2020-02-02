@@ -1,0 +1,12 @@
+使用下面的命令测试
+ssh -T git@github.com
+当你看到这些内容放入时候，直接输入yes
+The authenticity of host 'github.com (207.97.227.239)' can't be established. 
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48. 
+Are you sure you want to continue connecting (yes/no)?
+看到这个内容放入时候，说明就成功了。
+Hi username! 
+You've successfully authenticated, but GitHub does not provide shell access.
+
+
+当你想要把自己的代码上传到github上时，需先在自己的github上创建一个仓库，然后使用Git GUI（必须是Git GUI 不能是Git bash,bash不支持上传！）。把你要上传到的仓库的url拷贝到下面的Source Location的text框里，再在Target Directory的text框里输入你要克隆到的文件目录（必须是未创建的，否则会报错），然后点击“克隆”，会提示输入你的github账号及密码，正确后即可克隆到指定的目录里。
